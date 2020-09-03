@@ -6,19 +6,19 @@ class Test(unittest.TestCase):
     
     def case1(self):
         result = Calc(1,2).add()
-        self.assertEqual(result,3)
+        self.assertEqual(3, result)
     
     def case2(self):
         result = Calc(1,2).subtract()
-        self.assertEqual(result, -1)
+        self.assertEqual(-1, result)
     
     def case3(self):
         result = Calc(1,2).multiply()
-        self.assertEqual(result,2)
+        self.assertEqual(2, result)
     
     def case4(self):
         result = Calc(1,0).divide()
-        self.assertEqual(result,0)
+        self.assertEqual(0, result)
 
 
 #if __name__ == '__main__':
