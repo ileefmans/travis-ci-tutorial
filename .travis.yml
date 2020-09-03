@@ -1,0 +1,15 @@
+language: python
+python:
+  -3.7.4
+
+script:
+  -test
+
+notifications:
+  email:
+    recipients:
+      iel230@nyu.edu
+    on_success: always
+    on_failure: always
+
+
