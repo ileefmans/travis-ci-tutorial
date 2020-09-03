@@ -19,6 +19,10 @@ class Test(unittest.TestCase):
     def test_divide(self):
         result = Calc(1,1).divide()
         self.assertEqual(1, result)
+    
+    def test_divide_by_zero(self):
+        result = Calc(3,0).divide()
+        self.assertRaise(ZeroDivisionError)
 
 
 if __name__ == '__main__':
