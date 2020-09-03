@@ -1,9 +1,9 @@
 language: python
 python:
-  -3.6
+  - 3.6
 
 script:
-  -test
+  - test
 
 notifications:
   email:
