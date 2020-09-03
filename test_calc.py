@@ -21,8 +21,9 @@ class Test(unittest.TestCase):
         self.assertEqual(1, result)
     
     def test_divide_by_zero(self):
-        result = Calc(3,0).divide()
-        self.assertRaise(ZeroDivisionError)
+        with self.assertRaises(ZeroDivisionError):
+            Calc(3,0).divide()
+
 
 
 if __name__ == '__main__':
